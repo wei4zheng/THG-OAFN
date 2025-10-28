@@ -1,0 +1,51 @@
+# ===================================
+# THG-OAFN Project Dependencies
+# Temporal-aware Heterogeneous Graph Oversampling and Attention Fusion Network
+# ===================================
+
+# Deep Learning Framework
+torch>=2.0.0
+dgl>=1.1.0
+
+# Scientific Computing
+numpy>=1.21.0,<2.0
+scipy>=1.7.0
+
+# Data Processing
+pandas>=1.3.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+
+# Visualization (Optional)
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Progress Bar (Optional)
+tqdm>=4.62.0
+
+# ===================================
+# GPU Support (Optional)
+# ===================================
+# If you plan to use a GPU, install the corresponding CUDA version of DGL and PyTorch.
+#
+# 1. Uninstall the CPU version of DGL:
+#    pip uninstall dgl
+#
+# 2. Install the DGL version matching your CUDA version:
+#    CUDA 11.8: pip install dgl-cu118 -f https://data.dgl.ai/wheels/repo.html
+#    CUDA 12.1: pip install dgl-cu121 -f https://data.dgl.ai/wheels/repo.html
+#
+# 3. Install the GPU version of PyTorch (visit https://pytorch.org to select the proper version)
+#    Example (CUDA 11.8):
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# ===================================
+# Installation Instructions
+# ===================================
+# CPU Version (recommended for testing):
+#   pip install -r requirements.txt
+#
+# GPU Version (recommended for training):
+#   1. First install the CPU version: pip install -r requirements.txt
+#   2. Then follow the GPU Support section above to install the GPU versions of PyTorch and DGL
